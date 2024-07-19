@@ -36,8 +36,29 @@ html {
         font-size: 55%;
     }
 
-    .contact-section {
+    .contact-links {
         flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .contact-details {
+        margin: 0.5rem 0;
+        padding: 1rem 0;
+        font-size: 2rem;
+    }
+
+    .contact-section {
+        height: auto;
+        padding: 6rem 1rem;
+    }
+    
+    .contact-section-header > h2 {
+        font-size: 4rem;
+    }
+
+    .contactp {
+        font-size: 2rem;
     }
 }
 
@@ -114,6 +135,8 @@ img {
 
 .nav-list a:hover {
     background: var(--main-blue);
+    border-radius: 30%;
+    
 }
 
 /* Welcome section */
@@ -304,4 +327,16 @@ footer i {
 
 .contactp {
     font-size: 2.5rem;
+}
+
+.contact-details:last-of-type { /* Testing for responsiveness */
+    margin-bottom: 0;
+}
+
+.contact-details i { /* Responsiveness test*/
+    margin-right: 2rem;
+}
+
+.contact-details:hover { /* Turns the links purple on hover*/
+    color: var(--main-purple);
 }
